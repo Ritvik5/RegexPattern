@@ -30,5 +30,13 @@ namespace RegexPattern
             string namePattern = "^[A-Z]{1}[A-Za-z]{3,}$";
             Validate(data, namePattern);
         }
+
+        public void ValidLastName()
+        {
+            Console.WriteLine("\nEnter Last Name: \n");
+            string data = Console.ReadLine();
+            string pattern = "^[A-Z]{1}[A-Za-z]{3,}$";
+            Validate(data, pattern);
+        }
     }
 }
