@@ -15,6 +15,7 @@
                 Console.WriteLine("2. Validate Last Name.");
                 Console.WriteLine("3. Validate Pincode.");
                 Console.WriteLine("4. Validate Email.");
+                Console.WriteLine("5. Validate Sample Email.");
                 Console.WriteLine("0. Exit.");
 
                 int options = Convert.ToInt32(Console.ReadLine());
@@ -32,6 +33,9 @@
                         break;
                     case 4:
                         obj.ValidEmail();
+                        break;
+                    case 5:
+                        obj.ValidSampleEmail();
                         break;
                     case 0:
                         Environment.Exit(0);

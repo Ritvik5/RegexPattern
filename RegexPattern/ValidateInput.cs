@@ -54,5 +54,13 @@ namespace RegexPattern
             string pattern = "^[A-Za-z0-9]+([-_.+][A-Za-z0-9]+)?[@][A-Za-z]+[.][A-Za-z]{2,3}([.][a-z]{2})?$";
             Validate(data, pattern);
         }
+
+        public void ValidSampleEmail()
+        {
+            Console.WriteLine("\nEnter Sample Emails: \n");
+            string data = Console.ReadLine();
+            string pattern = "^[A-Za-z]{3}([+.-])?([0-9]{3})?[@][A-Za-z0-9]+[.][a-z]{3}([.][a-z]{2,})?$";
+            Validate(data, pattern);
+        }
     }
 }
