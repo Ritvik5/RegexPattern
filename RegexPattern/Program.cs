@@ -19,6 +19,7 @@
                 Console.WriteLine("6. Validate String.");
                 Console.WriteLine("7. Validate Lowercase Sequence.");
                 Console.WriteLine("8. Find HTML tags.");
+                Console.WriteLine("9. Number of Occurrence.");
                 Console.WriteLine("0. Exit.");
 
                 int options = Convert.ToInt32(Console.ReadLine());
@@ -48,6 +49,9 @@
                         break;
                     case 8:
                         obj.FindHtmlTags();
+                        break;
+                    case 9:
+                        obj.CountOccurrences();
                         break;
                     case 0:
                         Environment.Exit(0);

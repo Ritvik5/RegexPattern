@@ -91,5 +91,15 @@ namespace RegexPattern
                 Console.WriteLine(match1.Value);
             }
         }
+
+        public void CountOccurrences()
+        {
+            string data = "foxes are omnivorous mammals belonging to several genera of the family Canidae fox.";
+            string pattern = "fox(es)?";
+            Regex regex = new Regex(pattern);
+            int count = regex.Matches(data).Count();
+
+            Console.WriteLine("Number of Occurrence are: "+count);
+        }
     }
 }
