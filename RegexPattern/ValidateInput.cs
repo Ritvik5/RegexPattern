@@ -105,13 +105,20 @@ namespace RegexPattern
         public void ValidImageFileType()
         {
             string[] data = { "image.jpg", "photo.png", "picture.jpeg", "snapshot.gif", "doc.docx" ,"file.pdf" };
-            string pattern = "^[A-Za-z0-9-_]+[.][a-z]{2,}";
+            string pattern = "^[A-Za-z0-9-_]{1,}.(jpg|png|pdf)$";
 
             foreach (string data1 in data)
             {
                 bool isValid = Regex.IsMatch(data1, pattern);
                 Console.WriteLine(data1);
             }
+        }
+
+        public void ValidWebsiteName()
+        {
+            string data = "www.BridgeLabz.com";
+            string pattern = "^www.[A-Za-z0-9]{1,}.(com|log|in)$";
+            Validate(data,pattern);
         }
     }
 }

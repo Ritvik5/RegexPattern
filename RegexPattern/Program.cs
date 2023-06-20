@@ -21,6 +21,7 @@
                 Console.WriteLine("8. Find HTML tags.");
                 Console.WriteLine("9. Number of Occurrence.");
                 Console.WriteLine("10. Find Valid file name with an image file type extension.");
+                Console.WriteLine("11. Validate a website address format.");
                 Console.WriteLine("0. Exit.");
 
                 int options = Convert.ToInt32(Console.ReadLine());
@@ -56,6 +57,9 @@
                         break;
                     case 10:
                         obj.ValidImageFileType();
+                        break;
+                    case 11:
+                        obj.ValidWebsiteName();
                         break;
                     case 0:
                         Environment.Exit(0);
