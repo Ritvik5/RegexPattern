@@ -78,5 +78,18 @@ namespace RegexPattern
             string pattern = "[a-z]+(_[a-z]+)+";
             Validate(data, pattern);
         }
+
+        public void FindHtmlTags()
+        {
+            string data = "<p>The <code>Regex</code> is a compiled representation of a regular expression.</p>";
+            string pattern = "[<][/]?[a-z]{1,}[>]";
+
+            MatchCollection match = Regex.Matches(data,pattern);
+
+            foreach(Match match1 in match)
+            {
+                Console.WriteLine(match1.Value);
+            }
+        }
     }
 }
