@@ -10,12 +10,13 @@
 
             while(true)
             {
-                Console.WriteLine("\nPlease select options: ");
+                Console.WriteLine("\nPlease select options: \n");
                 Console.WriteLine("1. Validate First Name.");
                 Console.WriteLine("2. Validate Last Name.");
                 Console.WriteLine("3. Validate Pincode.");
                 Console.WriteLine("4. Validate Email.");
                 Console.WriteLine("5. Validate Sample Email.");
+                Console.WriteLine("6. Validate String.");
                 Console.WriteLine("0. Exit.");
 
                 int options = Convert.ToInt32(Console.ReadLine());
@@ -36,6 +37,9 @@
                         break;
                     case 5:
                         obj.ValidSampleEmail();
+                        break;
+                    case 6:
+                        obj.ValidString();
                         break;
                     case 0:
                         Environment.Exit(0);

@@ -62,5 +62,13 @@ namespace RegexPattern
             string pattern = "^[A-Za-z]{3}([+.-])?([0-9]{3})?[@][A-Za-z0-9]+[.][a-z]{3}([.][a-z]{2,})?$";
             Validate(data, pattern);
         }
+
+        public void ValidString()
+        {
+            Console.WriteLine("\nEnter string that has an ‘a’ followed by two to three 'b'\n");
+            string data = Console.ReadLine();
+            string pattern = "[a][b]{2,3}";
+            Validate(data, pattern);
+        }
     }
 }
