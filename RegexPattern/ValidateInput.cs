@@ -70,5 +70,13 @@ namespace RegexPattern
             string pattern = "[a][b]{2,3}";
             Validate(data, pattern);
         }
+
+        public void ValidLowercaseSequence()
+        {
+            string data = "abc_def_ghi jkl_mno_pqr_xyz";
+
+            string pattern = "[a-z]+(_[a-z]+)+";
+            Validate(data, pattern);
+        }
     }
 }
