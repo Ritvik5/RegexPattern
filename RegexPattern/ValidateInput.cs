@@ -101,5 +101,17 @@ namespace RegexPattern
 
             Console.WriteLine("Number of Occurrence are: "+count);
         }
+
+        public void ValidImageFileType()
+        {
+            string[] data = { "image.jpg", "photo.png", "picture.jpeg", "snapshot.gif", "doc.docx" ,"file.pdf" };
+            string pattern = "^[A-Za-z0-9-_]+[.][a-z]{2,}";
+
+            foreach (string data1 in data)
+            {
+                bool isValid = Regex.IsMatch(data1, pattern);
+                Console.WriteLine(data1);
+            }
+        }
     }
 }
