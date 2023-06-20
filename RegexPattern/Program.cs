@@ -13,6 +13,7 @@
                 Console.WriteLine("\nPlease select options: ");
                 Console.WriteLine("1. Validate First Name.");
                 Console.WriteLine("2. Validate Last Name.");
+                Console.WriteLine("3. Validate Pincode.");
                 Console.WriteLine("0. Exit.");
 
                 int options = Convert.ToInt32(Console.ReadLine());
@@ -24,6 +25,9 @@
                         break;
                     case 2:
                         obj.ValidLastName();
+                        break;
+                    case 3:
+                        obj.ValidPincode();
                         break;
                     case 0:
                         Environment.Exit(0);

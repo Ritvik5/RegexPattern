@@ -38,5 +38,13 @@ namespace RegexPattern
             string pattern = "^[A-Z]{1}[A-Za-z]{3,}$";
             Validate(data, pattern);
         }
+
+        public void ValidPincode()
+        {
+            Console.WriteLine("\nEnter Pin Code: \n");
+            string data = Console.ReadLine();
+            string pattern = "^[1-9][0-9]{2}[ ]?[0-9]{3}$";
+            Validate(data, pattern);
+        }
     }
 }
