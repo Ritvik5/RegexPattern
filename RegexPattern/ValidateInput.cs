@@ -128,5 +128,14 @@ namespace RegexPattern
             string pattern = "^91[ ][6-9][0-9]{9}$";
             Validate(data, pattern);
         }
+
+        public void ValidPassword()
+        {
+            Console.WriteLine("\nEnetr Password to validate: \n");
+            string data = Console.ReadLine() ;
+
+            string pattern = "^[A-Za-z0-9]{8,}$";
+            Validate(data, pattern);
+        }
     }
 }
