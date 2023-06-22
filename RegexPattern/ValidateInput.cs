@@ -120,5 +120,13 @@ namespace RegexPattern
             string pattern = "^www.[A-Za-z0-9]{1,}.(com|log|in)$";
             Validate(data,pattern);
         }
+
+        public void ValidMobilNumber()
+        {
+            Console.WriteLine("\nEnter Mobile Number: \n");
+            string data = Console.ReadLine();
+            string pattern = "^91[ ][6-9][0-9]{9}$";
+            Validate(data, pattern);
+        }
     }
 }
